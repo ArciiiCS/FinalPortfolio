@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Restua</title>
+    <!----------------------------FAVICON----------------------->
+    <link rel="shortcut icon" href="images/CM Logo.jpg" type="image/x-icon" />
+    <!----------------------------CSS ----------------------->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+
+    <!---------------------NAVIGATION BAR ----------------------->
+    <section>
+      <input type="checkbox" id="check">
+      <header>
+        </div>
+        <h2><a style="font-size: 30px;" href="index.html" class="logo">RR.</a></h2>
+        <div class="navigation">
+          <a href="about.html">About</a>
+          <a href="projects.html">Project</a>
+            <a href="experience.html">Experiences</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn"></i>
+        </label>
+      </header>
+      <h4><a href="index.html" class="Subtitle">Aspiring Software Engineer</a></h4>
+
+
+      <!---------------------CONTACTS ----------------------->
+      <div><br><br></div>
+      <div class="contact-section">
+        <h1 style=" font-family: sprat,serif;">CONT<mark style=" font-family: sprat,serif; color: #ff8d4d;background-color: #161616;">ACT</mark></h1>
+      </div>
+
+        <div class="left4">
+          <h4>Get in touch</h4>
+          <p>For Any Sort Of Help Or Inquiries, Feel Free To Send Me An Email And I'll Get Back To You Soon.</p>
+
+          <div>
+            <span class="icon"><i class="fas fa-user"></i></span>
+            <span class="contact-content">
+              <h3 style="font-family: sprat,serif;">Name</h3>
+              <span>Robert Carl Emanuel L. Restua</span>
+            </span>
+          </div>
+  
+          <div>
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="contact-content">
+              <h3 style="font-family: sprat,serif;">Address</h3>
+              <span>Carmona,Cavite - 4116</span>
+            </span>
+          </div>
+  
+          <div>
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <span class="contact-content">
+              <h3 style="font-family: sprat,serif;">Email</h3>
+              <span>restuaarcee02@gmail.com</span>
+            </span>
+          </div>
+
+        </div>
+
+        <!---------------------MESSAGE ME----------------------->
+                  <!----Studyforemail  -> "action"--------------->
+
+
+        <div class="right5">
+          <form class="gform pure-form pure-form-stacked" method="POST" data-email="restuaarcee02@gmail.com"
+          
+            action="https://script.google.com/macros/s/AKfycby-gXRAaWE833xr6nPsvsso5cZ-oqovPctZb3QQcs5gwhG1Exbi--6Qjb5Kk-jpdwdG/execss">
+
+            <h2>Message Me</h2>
+            <div>
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email Address" required />
+            </div>
+
+            <textarea type="message" name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <div class="contacts">
+              <button type="submit" class="info-btn">Send message</button>
+            </div>
+              <div class="thankyou_message"> 
+              
+                <h1 style="color: rgb(255, 255, 255);text-align: center;font-size:medium;">Message Sent</h1>
+              </div>
+          </form>
+        </div>
+
+        <!---------------------FOOTER----------------------->
+
+        <div class="contact-footer">
+          <a href="https://www.facebook.com/arcee.restua" target="_blank" class="social-btn"><i class="	fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/_itsarci_/" target="_blank" class="social-btn"><i class="	fab fa-instagram"></i></a>
+          <a href="https://twitter.com/arceerestua" target="_blank" class="social-btn"><i class="	fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/robertrestuacs/" target="_blank" class="social-btn"><i class="	fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/ArciiiCS" target="_blank" class="social-btn"><i class="	fab fa-github"></i></a>
+          <p>© 2022 Robert Restua. All rights reserved</p>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <!--Thankyou Message-->
+
+    <script data-cfasync="false" type="text/javascript">
+  
+      (function() {
+     function validEmail(email) {
+       var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+       return re.test(email);
+     }
+     
+     function validateHuman(honeypot) {
+       if (honeypot) {
+         console.log("Robot Detected!");
+         return true;
+       } else {
+         console.log("Welcome Human!");
+       }
+     }
+     function getFormData(form) {
+       var elements = form.elements;
+     
+       var fields = Object.keys(elements).filter(function(k) {
+             return (elements[k].name !== "honeypot");
+       }).map(function(k) {
+         if(elements[k].name !== undefined) {
+           return elements[k].name;
+         }else if(elements[k].length > 0){
+           return elements[k].item(0).name;
+         }
+       }).filter(function(item, pos, self) {
+         return self.indexOf(item) == pos && item;
+       });
+     
+       var formData = {};
+       fields.forEach(function(name){
+         var element = elements[name];
+         formData[name] = element.value;
+         if (element.length) {
+           var data = [];
+           for (var i = 0; i < element.length; i++) {
+             var item = element.item(i);
+             if (item.checked || item.selected) {
+               data.push(item.value);
+             }
+           }
+           formData[name] = data.join(', ');
+         }
+       });
+     
+       // add form-specific values into the data
+       formData.formDataNameOrder = JSON.stringify(fields);
+       formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
+       formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+     
+       console.log(formData);
+       return formData;
+     }
+     
+     function handleFormSubmit(event) {  
+       event.preventDefault();           
+       var form = event.target;
+       var data = getFormData(form);         
+       if( data.email && !validEmail(data.email) ) {   
+         var invalidEmail = form.querySelector(".email-invalid");
+         if (invalidEmail) {
+           invalidEmail.style.display = "block";
+           return false;
+         }
+       } else {
+         disableAllButtons(form);
+         var url = form.action;
+         var xhr = new XMLHttpRequest();
+         xhr.open('POST', url);
+         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+         xhr.onreadystatechange = function() {
+             console.log(xhr.status, xhr.statusText);
+             console.log(xhr.responseText);
+             var formElements = form.querySelector(".form-elements")
+             if (formElements) {
+               formElements.style.display = "none"; // hide form
+             }
+             var thankYouMessage = form.querySelector(".thankyou_message");
+             if (thankYouMessage) {
+               thankYouMessage.style.display = "block";
+             }
+             return;
+         };
+         var encoded = Object.keys(data).map(function(k) {
+             return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+         }).join('&');
+         xhr.send(encoded);
+       }
+     }
+     
+     function loaded() {
+       console.log("Contact form submission handler loaded successfully.");
+       var forms = document.querySelectorAll("form.gform");
+       for (var i = 0; i < forms.length; i++) {
+         forms[i].addEventListener("submit", handleFormSubmit, false);
+       }
+     };
+     document.addEventListener("DOMContentLoaded", loaded, false);
+     
+     function disableAllButtons(form) {
+       var buttons = form.querySelectorAll("button");
+       for (var i = 0; i < buttons.length; i++) {
+         buttons[i].disabled = true;
+       }
+     }
+     })();
+     
+     
+     </script>
+  </body>
+</html>
